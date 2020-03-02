@@ -1,0 +1,1235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC722AB3-0BE8-4631-9BBC-BC0908DCD548}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAPRO</RootNamespace>
+    <AssemblyName>DAPRO</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DAPRO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DAPRO.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Interop.IWshRuntimeLibrary">
+      <HintPath>F:\S+\S(2017)\SchoolPlus\Release\Interop.IWshRuntimeLibrary.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>F:\S+\S(2017)\SchoolPlus\Release\Reference\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\S(2013)\SchoolPlus\Release\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\DESKTOP-5CLTP20\Share Folder\DCAPP\DCAPP\bin\Release\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\DESKTOP-5CLTP20\Share Folder\DCAPP\DCAPP\bin\Release\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountHeadFolder\AccountHeadTools.cs" />
+    <Compile Include="Account\CashOrBankAccountTools.cs" />
+    <Compile Include="Backup\AccessPermission.cs" />
+    <Compile Include="Backup\Backup_RestoreTools.cs" />
+    <Compile Include="Backup\CreateShortcutTools.cs" />
+    <Compile Include="Backup\DbUpdate.cs" />
+    <Compile Include="Backup\SoftwareBackupSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup\SoftwareBackupSystem.Designer.cs">
+      <DependentUpon>SoftwareBackupSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup\XMLTools.cs" />
+    <Compile Include="CompanyFolder\CompanyGenerate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyFolder\CompanyGenerate.Designer.cs">
+      <DependentUpon>CompanyGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyFolder\CreateCompanyTools.cs" />
+    <Compile Include="Dashboard\DashboardWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DashboardWindow.Designer.cs">
+      <DependentUpon>DashboardWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\Summary\Summary_CategoryWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\Summary\Summary_CategoryWise.designer.cs">
+      <DependentUpon>Summary_CategoryWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\InventoryWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\InventoryWindow.Designer.cs">
+      <DependentUpon>InventoryWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\Summary\Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\Summary\Summary.designer.cs">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadgerFolder\AddBankLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadgerFolder\AddBankLedger.Designer.cs">
+      <DependentUpon>AddBankLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseFolder\BillFolder\BillClas.cs" />
+    <Compile Include="ExpenseFolder\BillFolder\BillEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenseFolder\BillFolder\BillEntry.designer.cs">
+      <DependentUpon>BillEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\ProductEntryHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\ProductEntryHistory.Designer.cs">
+      <DependentUpon>ProductEntryHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\StockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\StockEdit.designer.cs">
+      <DependentUpon>StockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\Summary\PartySalesSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\Summary\PartySalesSummary.Designer.cs">
+      <DependentUpon>PartySalesSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\Summary\Sales_OrderItemSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\Summary\Sales_OrderItemSummary.Designer.cs">
+      <DependentUpon>Sales_OrderItemSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadgerFolder\SubAccountTools.cs" />
+    <Compile Include="ReportFolder\GSTR3\CRGSTR3Report1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRGSTR3Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportFolder\GSTR3\DSGstr3B.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSGstr3B.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFolder\GSTR3\GSTR3_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFolder\GSTR3\GSTR3_View.Designer.cs">
+      <DependentUpon>GSTR3_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFolder\SubGroupReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFolder\SubGroupReport.Designer.cs">
+      <DependentUpon>SubGroupReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\AdvancePaymentAndCreditNoteLIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\AdvancePaymentAndCreditNoteLIST.designer.cs">
+      <DependentUpon>AdvancePaymentAndCreditNoteLIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\CrystalReportReceipVoucher.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportReceipVoucher.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\DSReceiptVoucher.cs">
+      <DependentUpon>DSReceiptVoucher.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\DSReceiptVoucher.Designer.cs">
+      <DependentUpon>DSReceiptVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\ReceiptVoucherReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\ReceiptVoucherReportView.Designer.cs">
+      <DependentUpon>ReceiptVoucherReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoftwareLicense\ActivationKey.cs" />
+    <Compile Include="SoftwareLicense\AppServerConfigWIndow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareLicense\AppServerConfigWIndow.Designer.cs">
+      <DependentUpon>AppServerConfigWIndow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoftwareLicense\AzureSQLHelper.cs" />
+    <Compile Include="SoftwareLicense\CheckInternetconnection.cs" />
+    <Compile Include="SoftwareLicense\CryptorEngine.cs" />
+    <Compile Include="SoftwareLicense\FolderCreate.cs" />
+    <Compile Include="SoftwareLicense\HardDrive.cs" />
+    <Compile Include="SoftwareLicense\HardwareInfo.cs" />
+    <Compile Include="SoftwareLicense\IsActivated.cs" />
+    <Compile Include="SoftwareLicense\OnlineActivationTools.cs" />
+    <Compile Include="SoftwareLicense\OnlineOrgTools.cs" />
+    <Compile Include="SoftwareLicense\OnlineServerDateTimeTools.cs" />
+    <Compile Include="SoftwareLicense\OrgDetailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareLicense\OrgDetailsWindow.Designer.cs">
+      <DependentUpon>OrgDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoftwareLicense\RegEdit.cs" />
+    <Compile Include="SoftwareLicense\ServerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareLicense\ServerManagement.Designer.cs">
+      <DependentUpon>ServerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoftwareLicense\SoftwareActivation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareLicense\SoftwareActivation.Designer.cs">
+      <DependentUpon>SoftwareActivation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoftwareLicense\SoftwareLicenceTools.cs" />
+    <Compile Include="LadgerFolder\AddCashAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadgerFolder\AddCashAccount.Designer.cs">
+      <DependentUpon>AddCashAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\StockWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\StockWindow.Designer.cs">
+      <DependentUpon>StockWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseFolder\BillPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenseFolder\BillPayment.designer.cs">
+      <DependentUpon>BillPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseFolder\AdvancePaymentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenseFolder\AdvancePaymentWindow.Designer.cs">
+      <DependentUpon>AdvancePaymentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadgerFolder\LedgerStatus.cs" />
+    <Compile Include="Banking\BankTransection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banking\BankTransection.Designer.cs">
+      <DependentUpon>BankTransection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransectionFolder\CashBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransectionFolder\CashBook.Designer.cs">
+      <DependentUpon>CashBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransectionFolder\TransectionTools.cs" />
+    <Compile Include="TransectionFolder\TransectionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransectionFolder\TransectionWindow.designer.cs">
+      <DependentUpon>TransectionWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseFolder\TransectionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenseFolder\TransectionList.designer.cs">
+      <DependentUpon>TransectionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseFolder\ExpenseEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenseFolder\ExpenseEntry.Designer.cs">
+      <DependentUpon>ExpenseEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseFolder\ExpenseTools.cs" />
+    <Compile Include="Account\Groups.cs" />
+    <Compile Include="Account\Report\AccountHeadReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Report\AccountHeadReport.designer.cs">
+      <DependentUpon>AccountHeadReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\SubGroupTools.cs" />
+    <Compile Include="AdvanceReceipt\AdvanceReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvanceReceipt\AdvanceReceipt.Designer.cs">
+      <DependentUpon>AdvanceReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceReceipt\AdvanceReceiptList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvanceReceipt\AdvanceReceiptList.Designer.cs">
+      <DependentUpon>AdvanceReceiptList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\BankAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\BankAdd.Designer.cs">
+      <DependentUpon>BankAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillingTermFolder\BillingTermEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillingTermFolder\BillingTermEntry.designer.cs">
+      <DependentUpon>BillingTermEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillingTermFolder\BillingTermTools.cs" />
+    <Compile Include="CreditNoteFolder\CreditNoteIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditNoteFolder\CreditNoteIssue.Designer.cs">
+      <DependentUpon>CreditNoteIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditNoteFolder\NoteAndVoucherList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditNoteFolder\NoteAndVoucherList.designer.cs">
+      <DependentUpon>NoteAndVoucherList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\CRTaxInvoiceIGST_WCess.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTaxInvoiceIGST_WCess.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrganizationDetails\ORGFillFirstTime.cs" />
+    <Compile Include="InventoryFolder\PurchaseFolder\AdvancePayment\AdvancePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\AdvancePayment\AdvancePayment.Designer.cs">
+      <DependentUpon>AdvancePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\AdvancePayment\AdvancePaymentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\AdvancePayment\AdvancePaymentList.Designer.cs">
+      <DependentUpon>AdvancePaymentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFolder\GSTR1\ATFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\B2BFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\B2CLFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\B2CSFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\CDNRFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\CDNURFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\DOCSFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\EXEMPFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\HSNFormate.cs" />
+    <Compile Include="ReportFolder\GSTR1\InvoiceExcelReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFolder\GSTR1\InvoiceExcelReportView.designer.cs">
+      <DependentUpon>InvoiceExcelReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFolder\GSTR2\PurchaseReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFolder\GSTR2\PurchaseReportView.designer.cs">
+      <DependentUpon>PurchaseReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\CRInvoiceSC_WCess.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRInvoiceSC_WCess.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\CRInvoiceCS_WOCess.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRInvoiceCS_WOCess.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomersFolder\CashCustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersFolder\CashCustomerList.Designer.cs">
+      <DependentUpon>CashCustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersFolder\CashCustomersTools.cs" />
+    <Compile Include="CustomersFolder\CustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersFolder\CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersFolder\Customertools.cs" />
+    <Compile Include="CustomersFolder\CustomerWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersFolder\CustomerWindows.designer.cs">
+      <DependentUpon>CustomerWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="District\DistTool.cs" />
+    <Compile Include="District\Dist_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="District\Dist_master.designer.cs">
+      <DependentUpon>Dist_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeFolder\CreateDesignation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeFolder\CreateDesignation.designer.cs">
+      <DependentUpon>CreateDesignation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeFolder\EmployeeDesignationTools.cs" />
+    <Compile Include="EmployeeFolder\EmployeeTools.cs" />
+    <Compile Include="EmployeeFolder\EmployeeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeFolder\EmployeeWindow.designer.cs">
+      <DependentUpon>EmployeeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Invoice_Direct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Invoice_Direct.Designer.cs">
+      <DependentUpon>Invoice_Direct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\InvoiceBillOfSupply.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceBillOfSupply.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Item\ComodityCodeTools.cs" />
+    <Compile Include="Item\ItemCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\ItemCategory.designer.cs">
+      <DependentUpon>ItemCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersFolder\CustomerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersFolder\CustomerWindow.Designer.cs">
+      <DependentUpon>CustomerWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadgerFolder\LedgerTools.cs" />
+    <Compile Include="Item\ItemEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\ItemEntry.designer.cs">
+      <DependentUpon>ItemEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\ItemTools.cs" />
+    <Compile Include="Item\ItemType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\ItemType.designer.cs">
+      <DependentUpon>ItemType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadgerFolder\LadgerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadgerFolder\LadgerDetails.designer.cs">
+      <DependentUpon>LadgerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationDetails\CreateCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizationDetails\CreateCompany.designer.cs">
+      <DependentUpon>CreateCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationDetails\ORG_Tools.cs" />
+    <Compile Include="InventoryFolder\PurchaseFolder\Order\PurchaseOrderEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\Order\PurchaseOrderEntry.Designer.cs">
+      <DependentUpon>PurchaseOrderEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\Order\PurchaseOrderWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\Order\PurchaseOrderWindow.Designer.cs">
+      <DependentUpon>PurchaseOrderWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseBill\PurchaseBillEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseBill\PurchaseBillEntry.designer.cs">
+      <DependentUpon>PurchaseBillEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseBill\PurchaseBillingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseBill\PurchaseBillingWindow.Designer.cs">
+      <DependentUpon>PurchaseBillingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseChallan\PurchaseChallanEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseChallan\PurchaseChallanEntry.Designer.cs">
+      <DependentUpon>PurchaseChallanEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseChallan\PurchaseChallanList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseChallan\PurchaseChallanList.Designer.cs">
+      <DependentUpon>PurchaseChallanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\PurchaseFolder\PurchaseWindows.designer.cs">
+      <DependentUpon>PurchaseWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFolder\ReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFolder\ReportWindow.Designer.cs">
+      <DependentUpon>ReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Challan\ChallanEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Challan\ChallanEntry.Designer.cs">
+      <DependentUpon>ChallanEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Challan\ChallanList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Challan\ChallanList.Designer.cs">
+      <DependentUpon>ChallanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Estimate\EstimateGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Estimate\EstimateGenerator.Designer.cs">
+      <DependentUpon>EstimateGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\Estimate\EstimateList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\Estimate\EstimateList.Designer.cs">
+      <DependentUpon>EstimateList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\InvoiceFrmChallan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\InvoiceFrmChallan.Designer.cs">
+      <DependentUpon>InvoiceFrmChallan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\InvoiceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\InvoiceWindow.Designer.cs">
+      <DependentUpon>InvoiceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\QryInvoice.cs" />
+    <Compile Include="SalesFolder\InvoiceFolder\Report\CRChallanInvoice1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRChallanInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\DSChallenInvoice.cs">
+      <DependentUpon>DSChallenInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\DSChallenInvoice.Designer.cs">
+      <DependentUpon>DSChallenInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\DSChallenInvoice1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChallenInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\InvoiceReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\InvoiceReportViewer.Designer.cs">
+      <DependentUpon>InvoiceReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\OrderFolder\OrderEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\OrderFolder\OrderEntry.Designer.cs">
+      <DependentUpon>OrderEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\OrderFolder\OrderWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\OrderFolder\OrderWindow.Designer.cs">
+      <DependentUpon>OrderWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\ReceiptFolder\ReceiptVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\ReceiptFolder\ReceiptVoucher.Designer.cs">
+      <DependentUpon>ReceiptVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\SalesTools.cs" />
+    <Compile Include="SalesFolder\SalesWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesFolder\SalesWindows.designer.cs">
+      <DependentUpon>SalesWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsFolder\InvoiceSettings\InvoiceSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsFolder\InvoiceSettings\InvoiceSettings.Designer.cs">
+      <DependentUpon>InvoiceSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsFolder\InvoiceSettings\INVOICE_TOOLS.cs" />
+    <Compile Include="SettingsFolder\OtherSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsFolder\OtherSettings.Designer.cs">
+      <DependentUpon>OtherSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsFolder\OtherSettingTools.cs" />
+    <Compile Include="SettingsFolder\SettingsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsFolder\SettingsWindow.Designer.cs">
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="State\StateTool.cs" />
+    <Compile Include="State\State_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="State\State_master.designer.cs">
+      <DependentUpon>State_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\StockList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\StockList.designer.cs">
+      <DependentUpon>StockList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\StockEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryFolder\ProductFolder\StockEntry.Designer.cs">
+      <DependentUpon>StockEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersFolder\Suppliers.cs" />
+    <Compile Include="SuppliersFolder\SuppliersMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersFolder\SuppliersMainWindow.designer.cs">
+      <DependentUpon>SuppliersMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddfinancialYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddfinancialYear.Designer.cs">
+      <DependentUpon>AddfinancialYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultClass.cs" />
+    <Compile Include="Bank\BAnkTools.cs" />
+    <Compile Include="LadgerFolder\AddAccountLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadgerFolder\AddAccountLedger.Designer.cs">
+      <DependentUpon>AddAccountLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FinancialYearTools.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Backup\SoftwareBackupSystem.resx">
+      <DependentUpon>SoftwareBackupSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyFolder\CompanyGenerate.resx">
+      <DependentUpon>CompanyGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\DashboardWindow.resx">
+      <DependentUpon>DashboardWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\Summary\Summary_CategoryWise.resx">
+      <DependentUpon>Summary_CategoryWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\InventoryWindow.resx">
+      <DependentUpon>InventoryWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\Summary\Summary.resx">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadgerFolder\AddBankLedger.resx">
+      <DependentUpon>AddBankLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenseFolder\BillFolder\BillEntry.resx">
+      <DependentUpon>BillEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\ProductEntryHistory.resx">
+      <DependentUpon>ProductEntryHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\StockEdit.resx">
+      <DependentUpon>StockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\Summary\PartySalesSummary.resx">
+      <DependentUpon>PartySalesSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\Summary\Sales_OrderItemSummary.resx">
+      <DependentUpon>Sales_OrderItemSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFolder\GSTR3\CRGSTR3Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRGSTR3Report1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFolder\GSTR3\GSTR3_View.resx">
+      <DependentUpon>GSTR3_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFolder\SubGroupReport.resx">
+      <DependentUpon>SubGroupReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\AdvancePaymentAndCreditNoteLIST.resx">
+      <DependentUpon>AdvancePaymentAndCreditNoteLIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\CrystalReportReceipVoucher.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportReceipVoucher.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\ReceiptVoucherReportView.resx">
+      <DependentUpon>ReceiptVoucherReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftwareLicense\AppServerConfigWIndow.resx">
+      <DependentUpon>AppServerConfigWIndow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftwareLicense\OrgDetailsWindow.resx">
+      <DependentUpon>OrgDetailsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftwareLicense\ServerManagement.resx">
+      <DependentUpon>ServerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftwareLicense\SoftwareActivation.resx">
+      <DependentUpon>SoftwareActivation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadgerFolder\AddCashAccount.resx">
+      <DependentUpon>AddCashAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\StockWindow.resx">
+      <DependentUpon>StockWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenseFolder\BillPayment.resx">
+      <DependentUpon>BillPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenseFolder\AdvancePaymentWindow.resx">
+      <DependentUpon>AdvancePaymentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banking\BankTransection.resx">
+      <DependentUpon>BankTransection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransectionFolder\CashBook.resx">
+      <DependentUpon>CashBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransectionFolder\TransectionWindow.resx">
+      <DependentUpon>TransectionWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenseFolder\TransectionList.resx">
+      <DependentUpon>TransectionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenseFolder\ExpenseEntry.resx">
+      <DependentUpon>ExpenseEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Report\AccountHeadReport.resx">
+      <DependentUpon>AccountHeadReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvanceReceipt\AdvanceReceipt.resx">
+      <DependentUpon>AdvanceReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvanceReceipt\AdvanceReceiptList.resx">
+      <DependentUpon>AdvanceReceiptList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\BankAdd.resx">
+      <DependentUpon>BankAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillingTermFolder\BillingTermEntry.resx">
+      <DependentUpon>BillingTermEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditNoteFolder\CreditNoteIssue.resx">
+      <DependentUpon>CreditNoteIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditNoteFolder\NoteAndVoucherList.resx">
+      <DependentUpon>NoteAndVoucherList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\Report\CRTaxInvoiceIGST_WCess.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTaxInvoiceIGST_WCess.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\AdvancePayment\AdvancePayment.resx">
+      <DependentUpon>AdvancePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\AdvancePayment\AdvancePaymentList.resx">
+      <DependentUpon>AdvancePaymentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFolder\GSTR1\InvoiceExcelReportView.resx">
+      <DependentUpon>InvoiceExcelReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFolder\GSTR2\PurchaseReportView.resx">
+      <DependentUpon>PurchaseReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\Report\CRInvoiceSC_WCess.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRInvoiceSC_WCess.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\Report\CRInvoiceCS_WOCess.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRInvoiceCS_WOCess.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersFolder\CashCustomerList.resx">
+      <DependentUpon>CashCustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersFolder\CustomerList.resx">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersFolder\CustomerWindows.resx">
+      <DependentUpon>CustomerWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="District\Dist_master.resx">
+      <DependentUpon>Dist_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeFolder\CreateDesignation.resx">
+      <DependentUpon>CreateDesignation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeFolder\EmployeeWindow.resx">
+      <DependentUpon>EmployeeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\Invoice_Direct.resx">
+      <DependentUpon>Invoice_Direct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\Report\InvoiceBillOfSupply.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvoiceBillOfSupply.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\ItemCategory.resx">
+      <DependentUpon>ItemCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersFolder\CustomerWindow.resx">
+      <DependentUpon>CustomerWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\ItemEntry.resx">
+      <DependentUpon>ItemEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\ItemType.resx">
+      <DependentUpon>ItemType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadgerFolder\LadgerDetails.resx">
+      <DependentUpon>LadgerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizationDetails\CreateCompany.resx">
+      <DependentUpon>CreateCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\Order\PurchaseOrderEntry.resx">
+      <DependentUpon>PurchaseOrderEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\Order\PurchaseOrderWindow.resx">
+      <DependentUpon>PurchaseOrderWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\PurchaseBill\PurchaseBillEntry.resx">
+      <DependentUpon>PurchaseBillEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\PurchaseBill\PurchaseBillingWindow.resx">
+      <DependentUpon>PurchaseBillingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\PurchaseChallan\PurchaseChallanEntry.resx">
+      <DependentUpon>PurchaseChallanEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\PurchaseChallan\PurchaseChallanList.resx">
+      <DependentUpon>PurchaseChallanList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\PurchaseFolder\PurchaseWindows.resx">
+      <DependentUpon>PurchaseWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFolder\ReportWindow.resx">
+      <DependentUpon>ReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Challan\ChallanEntry.resx">
+      <DependentUpon>ChallanEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Challan\ChallanList.resx">
+      <DependentUpon>ChallanList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Estimate\EstimateGenerator.resx">
+      <DependentUpon>EstimateGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\Estimate\EstimateList.resx">
+      <DependentUpon>EstimateList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\InvoiceFrmChallan.resx">
+      <DependentUpon>InvoiceFrmChallan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\InvoiceWindow.resx">
+      <DependentUpon>InvoiceWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\Report\CRChallanInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRChallanInvoice1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\Report\InvoiceReportViewer.resx">
+      <DependentUpon>InvoiceReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\OrderFolder\OrderEntry.resx">
+      <DependentUpon>OrderEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\OrderFolder\OrderWindow.resx">
+      <DependentUpon>OrderWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\ReceiptFolder\ReceiptVoucher.resx">
+      <DependentUpon>ReceiptVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\SalesWindows.resx">
+      <DependentUpon>SalesWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsFolder\InvoiceSettings\InvoiceSettings.resx">
+      <DependentUpon>InvoiceSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsFolder\OtherSettings.resx">
+      <DependentUpon>OtherSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsFolder\SettingsWindow.resx">
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="State\State_master.resx">
+      <DependentUpon>State_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\StockList.resx">
+      <DependentUpon>StockList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryFolder\ProductFolder\StockEntry.resx">
+      <DependentUpon>StockEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersFolder\SuppliersMainWindow.resx">
+      <DependentUpon>SuppliersMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddfinancialYear.resx">
+      <DependentUpon>AddfinancialYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadgerFolder\AddAccountLedger.resx">
+      <DependentUpon>AddAccountLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFolder\AccountHeadList.resx">
+      <DependentUpon>AccountHeadList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesFolder\InvoiceFolder\Report\TaxInvoiceIGST_WOCess.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TaxInvoiceIGST_WOCess.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banking\BankWindow.resx">
+      <DependentUpon>BankWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFolder\LedgerReport.resx">
+      <DependentUpon>LedgerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit\UnitEntry.resx">
+      <DependentUpon>UnitEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateApplication\ApplicationUpdate.resx">
+      <DependentUpon>ApplicationUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ChangePasswoerd.resx">
+      <DependentUpon>ChangePasswoerd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\LOginWindow.resx">
+      <DependentUpon>LOginWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\PermissionWindows.resx">
+      <DependentUpon>PermissionWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserWindow.resx">
+      <DependentUpon>UserWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportFolder\AccountHeadList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFolder\AccountHeadList.Designer.cs">
+      <DependentUpon>AccountHeadList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesFolder\InvoiceFolder\Report\TaxInvoiceIGST_WOCess.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxInvoiceIGST_WOCess.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\SQLHelper.cs" />
+    <Compile Include="Tools\ApplicationDesign.cs" />
+    <Compile Include="Tools\ButtonDesign.cs" />
+    <Compile Include="Banking\BankWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banking\BankWindow.Designer.cs">
+      <DependentUpon>BankWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFolder\LedgerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFolder\LedgerReport.Designer.cs">
+      <DependentUpon>LedgerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\UnitEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit\UnitEntry.Designer.cs">
+      <DependentUpon>UnitEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\UnitTools.cs" />
+    <Compile Include="UpdateApplication\ApplicationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateApplication\ApplicationUpdate.designer.cs">
+      <DependentUpon>ApplicationUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateApplication\UpdateApp.cs" />
+    <Compile Include="User\ChangePasswoerd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\ChangePasswoerd.Designer.cs">
+      <DependentUpon>ChangePasswoerd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\LOginWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\LOginWindow.Designer.cs">
+      <DependentUpon>LOginWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\PermissionWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\PermissionWindows.designer.cs">
+      <DependentUpon>PermissionWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserTools.cs" />
+    <Compile Include="User\UserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserWindow.Designer.cs">
+      <DependentUpon>UserWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Utils.cs" />
+    <None Include="ReportFolder\GSTR3\DSGstr3B.xsc">
+      <DependentUpon>DSGstr3B.xsd</DependentUpon>
+    </None>
+    <None Include="ReportFolder\GSTR3\DSGstr3B.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGstr3B.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportFolder\GSTR3\DSGstr3B.xss">
+      <DependentUpon>DSGstr3B.xsd</DependentUpon>
+    </None>
+    <None Include="SalesFolder\InvoiceFolder\Report\DSChallenInvoice.xsc">
+      <DependentUpon>DSChallenInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="SalesFolder\InvoiceFolder\Report\DSChallenInvoice.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChallenInvoice1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesFolder\InvoiceFolder\Report\DSChallenInvoice.xss">
+      <DependentUpon>DSChallenInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\DSReceiptVoucher.xsc">
+      <DependentUpon>DSReceiptVoucher.xsd</DependentUpon>
+    </None>
+    <None Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\DSReceiptVoucher.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReceiptVoucher2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesFolder\ReceiptFolder\ReceiptVoucherView\DSReceiptVoucher.xss">
+      <DependentUpon>DSReceiptVoucher.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnClearSelect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0017.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuBar_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuBar_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-outlined-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAPRO.ico" />
+    <Content Include="photo_jpg.ico" />
+    <None Include="Resources\update16.png" />
+    <None Include="Resources\default Logo.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\Cancel12.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\next%2822x22%29.png" />
+    <None Include="Resources\Refresh24.png" />
+    <Content Include="Resources\thumb_7_fc5baf86b725ec5f2b536d32725f24e3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
